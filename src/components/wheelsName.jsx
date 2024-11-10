@@ -20,7 +20,7 @@ function WheelsName() {
     const fetchVehicleTypes = async () => {
       
       try {
-        const response = await axios.get(`http://localhost:3000/api/vehicleType/${booking.category}`);
+        const response = await axios.get(`https://octalogic-backend-sg2l.onrender.com/api/vehicleType/${booking.category}`);
         setVehicleTypes(response.data);
       } catch (err) {
         console.error('Error fetching vehicle types:', err);

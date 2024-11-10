@@ -53,7 +53,7 @@ function DateAndTime() {
       console.log("Booking Payload:", payload); // Debugging
 
       // Send booking request to the backend
-      const response = await axios.post('http://localhost:3000/api/booking', payload);
+      const response = await axios.post('https://octalogic-backend-sg2l.onrender.com/api/booking', payload);
 
       if (response.status === 201) {
         // Booking confirmed, update booking state if needed

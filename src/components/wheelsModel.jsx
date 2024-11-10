@@ -17,7 +17,7 @@ function WheelsModel() {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/vehicles/${booking.typeId}`);
+        const response = await axios.get(`https://octalogic-backend-sg2l.onrender.com/api/vehicles/${booking.typeId}`);
         setVehicles(response.data);
       } catch (err) {
         console.error('Error fetching vehicles:', err);
